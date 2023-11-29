@@ -1,0 +1,102 @@
+site: Yong-Wendy
+url: 
+author: Yong
+author:
+  name: Yong
+  email: 
+  url: 
+  avatar: 
+title: Yong-Wendy
+description: Yong-Wendy - The chronicle of Yong & Wendy's time in Cambodia.
+logo: 
+image: 
+social:
+  name: Yong Lim
+  links:
+    - https://github.com/#
+  
+permalink: pretty
+
+# disqus:
+#  name: "your disqus username" # required
+#  noscript: "Please enable JavaScript to view the comments powered by Disqus." # optional
+
+baseurl: ""
+
+timezone: Asia/Phnom_Penh
+
+include:
+  - _redirects
+  
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - disqus-for-jekyll
+
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:slug
+  projects:
+    output: true
+    permalink: /projects/:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"     
+      
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE.md
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
