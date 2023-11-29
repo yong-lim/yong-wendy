@@ -8,7 +8,11 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
   <link rel="alternate" title="{{ site.title }}" type="application/json" href="{{ "/feed.json" | prepend: site.baseurl | prepend: site.url }}" />
   <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
-    
+
+  <link rel="stylesheet" href="{{ 'assets/css/back2top.css' | relative_url }}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="{{ 'assets/js/back2top.js' | relative_url }}"></script>
+
   <style type="text/css">
     {% capture include_to_scssify %}
       {% include inline.scss %}
@@ -17,3 +21,4 @@
   </style>  
   
 </head>
+
