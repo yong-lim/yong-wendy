@@ -16,6 +16,17 @@ header, main {
   max-width: 50rem;
 }
 
+.sticky {
+  position: -webkit-sticky;
+  position:fixed;
+  top: 0;
+  left:0;
+  right:0;
+  text-align: center;
+  background: white;
+  z-index:170;
+}
+
 .grid {
     display: flex;
     flex-wrap: wrap;
@@ -112,7 +123,7 @@ header, main {
 }
 
 .card h2 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -132,12 +143,15 @@ header, main {
   flex-direction: column;
 }
 
+.post h2 {
+  font-size: 1.2rem;
+}
+
 .post {
   background: white;
   padding: 2rem 3rem;
   -webkit-box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
   box-shadow: 0 0.75rem 1.5rem rgba(18, 38, 63, 0.03);
-  
 }
 
 .card {
@@ -203,5 +217,7 @@ nav {
 footer {
   margin: 1rem 0;
   text-align: center;
-	font-size: 0.9em;
+  font-size: 0.9em;
 }
+
+
