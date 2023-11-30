@@ -3,9 +3,13 @@ layout: page
 title: About Us
 ---
 
-## Colorie - Single column blog and portfolio Jekyll theme 
+## Yong & Wendy - we're missionaries to Cambodia
 
-Colorful, minimal one-column portfolio/blog theme built for Jekyll. Perfect for your personal website, blog and portfolio.
+![Yong & Wendy](/assets/images/yong-wendy.jpg "Yong & Wendy")
+
+We belong to the InterServe-GBI team serving in Cambodia.
+
+Yong has background in IT field.
 
 ### Key features
 
@@ -21,4 +25,3 @@ Colorful, minimal one-column portfolio/blog theme built for Jekyll. Perfect for 
 - json feed
 - http security headers
 
-![Alt text](/assets/images/image.jpeg "a title")
